@@ -17,6 +17,20 @@ namespace smallPhysics
         {
             hMax = (ControllerGame.ball.speed * ControllerGame.ball.speed) / (2 * gravity);
             Ball ball = ControllerGame.ball;
+            Box box = ControllerGame.box;
+
+
+            #region Коллизия
+            if(isCollision(ball,box))
+            {
+
+                ControllerGame.left = false;
+                ControllerGame.right = false;
+            }
+            #endregion
+
+
+            #region Падения
             if (ControllerGame.clientSize.Height < ball.y + ball.rad)
             {
                 ControllerGame.ball.y = ControllerGame.clientSize.Height - ball.rad + 1;
@@ -37,6 +51,29 @@ namespace smallPhysics
                         ControllerGame.jump = false;
                 }
             }
+            #endregion
+        }
+        public static bool isCollision(Ball ball, Box box)
+        {
+
+            if (ball.y + ball.rad > box.y && ball.x + ball.rad > box.x && ball.x - ball.rad < box.x + box.width && ball.y - ball.rad < box.y)
+            {
+                ControllerGame.ball.y = box.y - ball.rad - 5;
+                return true;
+            }
+            //sides
+            else if (ball.x + ball.rad > box.x && ball.x + ball.rad < box.x + box.width && ball.y + ball.rad >= box.y)
+            {
+                ControllerGame.ball.x = box.x-ball.rad;
+                return true;
+            }
+            else if (ball.x - ball.rad < box.x + box.width && ball.x - ball.rad > box.x && ball.y + ball.rad >= box.y)
+            {
+                ControllerGame.ball.x = box.x + box.width + ball.rad;
+                return true;
+            }
+            //top
+            return false;
         }
     }
 }

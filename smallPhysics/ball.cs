@@ -9,13 +9,14 @@ namespace smallPhysics
 {
     public class Ball
     {
-        internal float x, y, rad, speed;
-        public Ball(float x, float y, float rad, float speed)
+        internal float x, y, rad, speed, mass;
+        public Ball(float x, float y, float rad, float speed, float mass)
         {
             this.x = x;
             this.y = y;
             this.rad = rad;
             this.speed = speed;
+            this.mass = mass;
             ControllerGame.createBall(this);
         }
         public void draw(Graphics gr)

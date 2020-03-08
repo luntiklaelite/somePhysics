@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ball.cs" />
+    <Compile Include="Box.cs" />
     <Compile Include="ControllerGame.cs" />
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>

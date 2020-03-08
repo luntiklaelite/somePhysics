@@ -10,6 +10,7 @@ namespace smallPhysics
     public class ControllerGame
     {
         internal static Ball ball;
+        internal static Box box;
         internal static Size clientSize;
         internal static bool jump = false;
         internal static bool right = false;

@@ -13,19 +13,22 @@ namespace smallPhysics
     public partial class mainForm : Form
     {
         Ball ball;
+        Box box;
         
         public mainForm()
         {
             InitializeComponent();
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             ControllerGame.init(ClientSize);
-            ball = new Ball(ClientSize.Width/2, ClientSize.Height/2, 20, 10);
+            ball = new Ball(ClientSize.Width/2, ClientSize.Height/2, 20, 10, 50);
+            box = new Box(ClientSize.Width - 200, ClientSize.Height - 50, 50, 50, 50);
             timer1.Start();
         }
 
         private void mainForm_Paint(object sender, PaintEventArgs e)
         {
             ControllerGame.ball.draw(e.Graphics);
+            ControllerGame.box.draw(e.Graphics);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
