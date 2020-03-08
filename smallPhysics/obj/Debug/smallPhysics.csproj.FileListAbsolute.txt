@@ -1,0 +1,10 @@
+C:\Users\LUNTIKLAELITE\Desktop\smallphysic\smallPhysics\smallPhysics\bin\Debug\smallPhysics.exe.config
+C:\Users\LUNTIKLAELITE\Desktop\smallphysic\smallPhysics\smallPhysics\bin\Debug\smallPhysics.exe
+C:\Users\LUNTIKLAELITE\Desktop\smallphysic\smallPhysics\smallPhysics\bin\Debug\smallPhysics.pdb
+C:\Users\LUNTIKLAELITE\Desktop\smallphysic\smallPhysics\smallPhysics\obj\Debug\smallPhysics.csprojAssemblyReference.cache
+C:\Users\LUNTIKLAELITE\Desktop\smallphysic\smallPhysics\smallPhysics\obj\Debug\smallPhysics.mainForm.resources
+C:\Users\LUNTIKLAELITE\Desktop\smallphysic\smallPhysics\smallPhysics\obj\Debug\smallPhysics.Properties.Resources.resources
+C:\Users\LUNTIKLAELITE\Desktop\smallphysic\smallPhysics\smallPhysics\obj\Debug\smallPhysics.csproj.GenerateResource.cache
+C:\Users\LUNTIKLAELITE\Desktop\smallphysic\smallPhysics\smallPhysics\obj\Debug\smallPhysics.csproj.CoreCompileInputs.cache
+C:\Users\LUNTIKLAELITE\Desktop\smallphysic\smallPhysics\smallPhysics\obj\Debug\smallPhysics.exe
+C:\Users\LUNTIKLAELITE\Desktop\smallphysic\smallPhysics\smallPhysics\obj\Debug\smallPhysics.pdb
